@@ -4,11 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals by Emmanuel A. Samuel. Explore essential web development concepts, including HTML, CSS, JavaScript, and responsive design to build dynamic, user-friendly websites.">
+
+    <meta name="author" content="Emmanuel A. Samuel">
+    <title>WDD 131 – Dynamic Web Fundamentals - Emmanuel A. Samuel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 
 <body>
-    <h1>Testing</h1>
+    <header>
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            &#9776;
+        </button>
+        <div class="header-intro">
+            <img src="images/emmanuel.webp" width="100" height="133" alt="Emmanuel A. Samuel" loading="lazy">
+            <h1> <span class="lgt-color">Emmanuel A. Samuel</span></h1>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a>
+                </li>
+                <li><a href="#">Github Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/emmanuel-anietie-samuel-b47a1a173/">Linkedin</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="padding-1">
+            <h1>Home</h1>
+            <section class="card main-card">
+                <h2>Course Work</h2>
+                <div class="">
+
+                    <div class="res-link">
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="aside-sidebar card">
+                <h2>Lagos, Nigeria</h2>
+                <div>
+                    <figure>
+                        <img src="images/lagos-city-island-image.webp" width="200" height="233"
+                            alt="Lagos Island, Nigeria" loading="lazy">
+                        <figcaption>Lagos, Nigeria</figcaption>
+                    </figure>
+
+                </div>
+            </section>
+        </div>
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="courses-btn controls">
+                <button data-filter="all">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
+            </div>
+
+            <div id="credit-total"></div>
+            <div class="course-list">
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="head-foot-col padding-1">
+        <p>&copy; <span id="currentyear"></span> Emmanuel A. Samuel | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
 </body>
 
 </html>

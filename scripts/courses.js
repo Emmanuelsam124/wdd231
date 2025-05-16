@@ -85,7 +85,7 @@ function renderCourseCards(courseArray) {
   courseListContainer.innerHTML = "";
 
   const totalCredits = courseArray.reduce((sum, c) => sum + c.credits, 0);
-  creditDisplay.textContent = `Total Credits: ${totalCredits}`;
+  creditDisplay.textContent = `The total number of course listed is ${totalCredits}`;
 
   courseArray.forEach((course) => {
     const card = document.createElement("div");

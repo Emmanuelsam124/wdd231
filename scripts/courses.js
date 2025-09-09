@@ -67,15 +67,15 @@ const courses = [
   },
 ];
 
-let courseEl = document.querySelector(".res-link");
-let ul = document.createElement("ul");
-const courseList = courses.map((course) => {
-  let lists = document.createElement("li");
-  lists.textContent = course.subject;
-  ul.appendChild(lists);
-});
+// let courseEl = document.querySelector(".res-link");
+// let ul = document.createElement("ul");
+// const courseList = courses.map((course) => {
+//   let lists = document.createElement("li");
+//   lists.textContent = course.subject;
+//   ul.appendChild(lists);
+// });
 
-courseEl.appendChild(ul);
+// courseEl.appendChild(ul);
 
 const courseListContainer = document.querySelector(".course-list");
 const creditDisplay = document.getElementById("credit-total");
